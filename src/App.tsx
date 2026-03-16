@@ -56,7 +56,7 @@ export default function App() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="/assets/hero3.jpg" style={{ filter: 'blur(2px)' }} alt="Senso Restaurant Interior" className="w-full h-full object-cover opacity-40" referrerPolicy="no-referrer"/>
+          <img src="/assets/hero3.jpg" style={{ filter: 'blur(1px)' }} alt="Senso Restaurant Interior" className="w-full h-full object-cover opacity-40" referrerPolicy="no-referrer"/>
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/50 to-[#050505]"></div>
         </div>
         
