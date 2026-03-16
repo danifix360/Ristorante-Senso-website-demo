@@ -56,7 +56,7 @@ export default function App() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="../public/assets/hero3.jpg?blur=2" alt="Senso Restaurant Interior" className="w-full h-full object-cover opacity-40" referrerPolicy="no-referrer"/>
+          <img src="/assets/hero3.jpg" style={{ filter: 'blur(2px)' }} alt="Senso Restaurant Interior" className="w-full h-full object-cover opacity-40" referrerPolicy="no-referrer"/>
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/50 to-[#050505]"></div>
         </div>
         
@@ -78,7 +78,7 @@ export default function App() {
       <section id="about" className="py-32 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="image-mask h-[600px]">
-            <img src="../public/assets/chilometro_zero.jpg" alt="Ingredienti freschi e locali" className="w-full h-full object-cover" referrerPolicy="no-referrer"/>
+            <img src="/assets/chilometro_zero.jpg" alt="Ingredienti freschi e locali" className="w-full h-full object-cover" referrerPolicy="no-referrer"/>
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
             <span className="small-caps mb-4 block">La Nostra Filosofia</span>
@@ -107,17 +107,17 @@ export default function App() {
               {
                 title: "Crudo di Mare",
                 desc: "Gambero rosso di Mazara, agrumi di Sicilia, olio evo monocultivar",
-                img: "../public/assets/crudo_di_mare.jpg"
+                img: "/assets/crudo_di_mare.jpg"
               },
               {
                 title: "Risotto Riserva",
                 desc: "Riso Carnaroli, tartufo bianco d'Alba, burro di malga, Parmigiano 36 mesi",
-                img: "../public/assets/risotto.jpg"
+                img: "/assets/risotto.jpg"
               },
               {
                 title: "Polpo Verace",
                 desc: "Polpo arrostito, crema di patate affumicate, polvere di capperi e olive",
-                img: "../public/assets/polpo3.jpg"
+                img: "/assets/polpo3.jpg"
               }
             ].map((item, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: i * 0.2 }} className="group cursor-pointer">
